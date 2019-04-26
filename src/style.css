@@ -1,0 +1,47 @@
+.infinite-scroll {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+  }
+
+.infinite-scroll__scroll {
+    position: relative;
+    width: calc(100% + 30px);
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .infinite-scroll__scroll {
+        scroll-snap-type: y mandatory;
+    }
+}
+
+.infinite-scroll__error {
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+.infinite-scroll__bottom {
+    pointer-events: none;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    margin-top: -150px;
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+    opacity: 1;
+    transition: opacity .3s;
+}
+.infinite-scroll__bottom--hidden {
+    opacity: 0;
+}
+
+.infinite-scroll__spinner {
+    left: -30px;
+}

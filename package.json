@@ -1,0 +1,42 @@
+{
+  "name": "react-infinite-scroll-io",
+  "version": "1.0.0",
+  "description": "React infinite scroll component based on Intersection Observer",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Synopticum/react-infinite-scroll-io.git"
+  },
+  "peerDependencies": {
+    "react": "^16.4.0"
+  },
+  "author": {
+    "name": "synoptic"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Synopticum/react-infinite-scroll-io/issues"
+  },
+  "homepage": "https://github.com/Synopticum/react-infinite-scroll-io#readme",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "react": "^16.4.0",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.12.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^2.1.1",
+    "style-loader": "^0.23.1",
+    "webpack-cli": "^3.0.4"
+  }
+}
