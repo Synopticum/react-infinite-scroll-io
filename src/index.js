@@ -28,7 +28,7 @@ class InfiniteScroll extends React.Component {
     render() {
         return (
             <div className="infinite-scroll">
-                <div className="infinite-scroll__scroll" ref={this.scrollable}>
+                <div className="infinite-scroll__scroll" ref={this.scrollable} style={{maxHeight: this.props.maxHeight || 'auto'}}>
                     {!_.isEmpty(this.props.items) ? this.renderList(this.props.items) : <div className="infinite-scroll__error">{!(this.props.isFetching || this.props.isLoadingMore) ? this.props.errorMessage : ''}</div> }
 
                     <div className="infinite-scroll__threshold" ref={this.threshold}/>

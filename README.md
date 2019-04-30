@@ -38,6 +38,7 @@ Then just render it:
 | name                       | className of the component                    |      String                        |
 | items                      | Array of items to render                      |      Array                         |
 | errorMessage               | Message shown if an array is empty            |      String                        |
+| maxHeight?                 | Max. height of the scrollable area            |      String                        |
 | renderCallback             | Render function for array items               |      Function(returns JSX)         |
 | loadMoreCallback           | API call returning items                      |      Function                      |
 | loadMoreParams             | Params to pass to a loadMoreCallback          |      Array                         |
